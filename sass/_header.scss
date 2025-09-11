@@ -1,0 +1,30 @@
+header{
+    height: 10rem;
+    background-color: var(--azul-escuro);
+    color: white;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-bottom: 5rem;
+    padding: 1rem;
+
+    .logo{
+        width: 20%;
+        padding-left: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+
+        img{
+            height: 3.5rem;
+        }
+
+        h1{
+            font-family: var(--museo);
+            font-weight: 500;
+            font-size: 22px;
+        }
+
+    }
+}
