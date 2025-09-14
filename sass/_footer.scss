@@ -1,0 +1,55 @@
+footer{
+    background: var(--azul-escuro);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;   
+
+    div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 30%;
+        padding: 1rem;
+
+        h4{
+            padding: 2rem;
+            font-size: 20px;
+            color: white;
+            font-weight: 400;
+            text-align: center;
+        }
+
+        span{
+            font-weight: 900;
+        }
+
+
+    }
+
+
+    .logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        flex-direction: row;
+
+        img{
+            height: 3.5rem;
+        }
+
+        h1{
+            font-family: var(--museo);
+            font-weight: 500;
+            font-size: 22px;
+            text-wrap: nowrap;
+        }
+    }
+
+    hr{
+        height: 10rem;
+    }
+}

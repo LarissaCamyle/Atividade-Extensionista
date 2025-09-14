@@ -24,7 +24,19 @@ header{
             font-family: var(--museo);
             font-weight: 500;
             font-size: 22px;
+            width: 40%;
+            text-wrap: nowrap;
         }
+    }
 
+    .opcoes{
+        width: 60%;
+        display: flex;
+        justify-content:right;
+        align-items: center;
+        padding-right: 2rem;
+        gap: 2rem;
+        font-family: var(--jost);
+        flex-direction: row;
     }
 }
