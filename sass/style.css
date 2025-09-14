@@ -48,6 +48,9 @@ header .opcoes {
   font-family: var(--jost);
   flex-direction: row;
 }
+header .opcoes h2:hover {
+  transform: scale(1.1);
+}
 
 container {
   width: 100%;
@@ -116,9 +119,13 @@ button {
   font-family: var(--karla);
   font-weight: 900;
   border: none;
-  border-radius: 10px;
+  border-radius: 20px;
   font-size: 23px;
   margin-top: 1rem;
+}
+
+button:hover {
+  transform: scale(1.1);
 }
 
 footer {
@@ -134,18 +141,22 @@ footer div {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 30%;
-  padding: 1rem;
+  width: 25rem;
+  margin: 2rem 0rem;
 }
 footer div h4 {
   padding: 2rem;
   font-size: 20px;
   color: white;
+  font-family: var(--josefin);
   font-weight: 400;
   text-align: center;
 }
 footer div span {
   font-weight: 900;
+}
+footer div button {
+  color: var(--azul-escuro);
 }
 footer .logo {
   display: flex;
@@ -162,6 +173,12 @@ footer .logo h1 {
   font-weight: 500;
   font-size: 22px;
   text-wrap: nowrap;
+}
+footer .rodape-1 {
+  margin-left: 10rem;
+}
+footer .rodape-2 {
+  margin-right: 10rem;
 }
 footer hr {
   height: 10rem;

@@ -38,5 +38,9 @@ header{
         gap: 2rem;
         font-family: var(--jost);
         flex-direction: row;
+
+        h2:hover{
+            transform: scale(1.1);
+        }
     }
 }

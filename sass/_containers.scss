@@ -73,7 +73,11 @@ button{
     font-family: var(--karla);
     font-weight: 900;
     border: none;
-    border-radius: 10px;
+    border-radius: 20px;
     font-size: 23px;
     margin-top: 1rem;
+}
+
+button:hover{
+    transform: scale(1.1);
 }
