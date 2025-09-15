@@ -1,5 +1,4 @@
 header{
-    height: 10rem;
     background-color: var(--azul-escuro);
     color: white;
     display: flex;
@@ -34,8 +33,9 @@ header{
         display: flex;
         justify-content:right;
         align-items: center;
-        padding-right: 2rem;
-        gap: 2rem;
+        padding: 1.5rem 2rem 1.5rem 0rem;
+        gap: 3rem;
+        font-size: 22px;
         font-family: var(--jost);
         flex-direction: row;
 

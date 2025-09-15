@@ -11,7 +11,6 @@
 }
 
 header {
-  height: 10rem;
   background-color: var(--azul-escuro);
   color: white;
   display: flex;
@@ -43,8 +42,9 @@ header .opcoes {
   display: flex;
   justify-content: right;
   align-items: center;
-  padding-right: 2rem;
-  gap: 2rem;
+  padding: 1.5rem 2rem 1.5rem 0rem;
+  gap: 3rem;
+  font-size: 22px;
   font-family: var(--jost);
   flex-direction: row;
 }
@@ -54,16 +54,17 @@ header .opcoes h2:hover {
 
 container {
   width: 100%;
-  height: 40rem;
+  height: 45rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 4rem 0rem 0rem 0rem;
+  margin: 3rem 0rem 0rem 0rem;
   background-color: aqua;
   gap: 5rem;
 }
 container img {
   height: 35rem;
+  padding: 2rem 0rem;
 }
 container div {
   width: 20rem;
@@ -96,11 +97,11 @@ container div span {
 }
 
 .container-3 {
-  height: 40rem !important;
+  height: 40rem;
   background: var(--rosa);
 }
 .container-3 img {
-  border-radius: 1rem;
+  border-radius: 0px;
   height: 25rem;
   margin: 3rem;
 }
