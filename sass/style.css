@@ -52,6 +52,59 @@ header .opcoes h2:hover {
   transform: scale(1.1);
 }
 
+@media screen and (max-width: 750px) {
+  header {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  header .logo {
+    padding-left: 0rem;
+    gap: 0rem;
+    width: auto;
+    padding: 1rem;
+  }
+  header .logo img {
+    height: 3rem;
+  }
+  header .logo h1 {
+    width: auto;
+    font-size: 20px;
+  }
+  header .opcoes {
+    justify-content: end;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 1rem 0rem;
+    gap: 2rem;
+    font-size: 19px;
+  }
+}
+@media screen and (min-width: 750px) and (max-width: 1000px) {
+  header {
+    flex-direction: row;
+  }
+  header .logo {
+    width: 100%;
+    padding-left: 0rem;
+    gap: 0.5rem;
+  }
+  header .logo img {
+    height: 3rem;
+  }
+  header .logo h1 {
+    width: auto;
+    font-size: 20px;
+  }
+  header .opcoes {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 1rem 0rem;
+    gap: 2rem;
+    font-size: 19px;
+  }
+}
 container {
   width: 100%;
   height: 45rem;
