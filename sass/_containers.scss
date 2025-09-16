@@ -82,3 +82,43 @@ button{
 button:hover{
     transform: scale(1.1);
 }
+
+@media screen and (max-width: 750px) {
+    container{
+        flex-direction: column;
+        height: auto;
+        gap:1rem;
+
+        img{
+            height: 20rem;
+            padding: 1rem 0rem;
+        }
+
+        div{
+            width: auto;
+
+            h2{
+                font-size: 1.5rem;
+                font-family: var(--karla);
+                font-weight: 300;
+                color: white;
+            }
+
+            h3{
+                font-size: 2rem;
+                font-family: var(--karla);
+                font-weight: 300;
+                color: white;
+            }
+
+            span{
+                font-weight: 900;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 750px) and (max-width: 1000px) {
+
+}
+
