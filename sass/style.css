@@ -193,7 +193,7 @@ button:hover {
     padding: 2rem 0rem 1rem 0rem;
   }
   container img {
-    width: 85%;
+    width: 80%;
     height: auto;
     padding: 1rem 0rem;
   }
@@ -203,14 +203,15 @@ button:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 0.8rem;
   }
   container div h2 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     text-align: center;
     padding: 1rem 10% 0rem 10%;
   }
   container div h3 {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     text-align: center;
     padding: 0rem 10%;
   }
@@ -248,16 +249,16 @@ button:hover {
 }
 @media screen and (min-width: 500px) and (max-width: 650px) {
   container img {
-    width: 80%;
+    width: 75%;
   }
   container div {
     gap: 1rem;
   }
   container div h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   container div h3 {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
 }
 footer {
