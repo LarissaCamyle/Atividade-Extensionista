@@ -7,10 +7,11 @@ container{
     margin: 3rem 0rem 0rem 0rem;
     background-color: aqua;
     gap:5rem;
+    padding: 2rem 0rem;
 
     img{
         height: 35rem;
-        padding: 2rem 0rem;
+        
     }
 
     div{
@@ -49,7 +50,7 @@ container{
 }
 
 .container-3{
-    height: 40rem;
+    height: auto;
     background: var(--rosa);
 
     img{
@@ -129,6 +130,16 @@ button:hover{
         }
     }
 
+    .container-1{
+        flex-direction: column-reverse;
+        gap: 0rem;
+        padding: 2rem 0rem;
+
+        img{
+            padding: 0rem;
+        }
+    }
+
     .container-1, .container-2{
         gap: 0rem;
     }
@@ -183,7 +194,74 @@ button:hover{
     }
 }
 
-@media screen and (min-width: 750px) and (max-width: 1000px) {
+@media screen and (min-width: 650px) and (max-width: 1000px) {
+    container{
+        gap: 0rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0rem;
 
+        img{
+            width: 50%!important;
+            height: auto;
+            padding: 1rem 0rem;
+        }
+
+        div{
+            gap: 1rem;
+            width: 11rem!important;
+            text-align: center;
+            padding: 0rem;
+            margin: 0rem;
+            
+
+            h2{
+                font-size: 1.8rem;
+                
+            }
+
+            h3{
+                font-size: 1.4rem;
+            }
+
+            button{
+                padding: 1rem 1.5rem;
+                font-size: 20px;
+                margin-top: 1rem;
+                width: 12rem;
+            }
+        }
+    }
+    .container-3{
+        h3{
+            margin: 0rem;
+        }
+
+        img{
+            padding: 0rem;
+        }
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1300px) {
+    container{
+        gap: 0rem;
+
+        img{
+            width: 50%!important;
+            height: auto;
+            padding: 2rem 0rem;
+        }
+    }
+    .container-3{
+        padding: 2rem 0rem;
+        img{
+            image-orientation: flip;
+            width: 50%;
+            height: auto;
+            padding: 0rem;
+        }
+    }
 }
 
