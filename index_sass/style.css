@@ -335,27 +335,40 @@ footer {
   align-items: center;
   flex-direction: row;
 }
-footer div {
+footer .rodape-1, footer .rodape-2 {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 25rem;
+  width: 20%;
   margin: 2rem 0rem;
 }
-footer div h4 {
-  padding: 2rem;
+footer .rodape-1 h4, footer .rodape-2 h4 {
+  padding: 1rem;
   font-size: 20px;
   color: white;
   font-family: var(--josefin);
   font-weight: 400;
   text-align: center;
 }
-footer div span {
+footer .rodape-1 span, footer .rodape-2 span {
   font-weight: 900;
 }
-footer div button {
+footer .rodape-1 button, footer .rodape-2 button {
   color: var(--azul-escuro);
+}
+footer .rodape-1 .btn-linkedin, footer .rodape-2 .btn-linkedin {
+  background: none;
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+footer .rodape-1 .btn-linkedin img, footer .rodape-2 .btn-linkedin img {
+  width: 30px;
 }
 footer .logo {
   display: flex;
@@ -381,4 +394,94 @@ footer .rodape-2 {
 }
 footer hr {
   height: 10rem;
+}
+
+@media screen and (max-width: 600px) {
+  footer {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  footer .rodape-1, footer .rodape-2 {
+    width: auto;
+    margin: 0rem 0rem;
+  }
+  footer .rodape-1 h4, footer .rodape-2 h4 {
+    padding: 0.5rem;
+    font-size: 16px;
+  }
+  footer .rodape-1 button, footer .rodape-2 button {
+    font-size: 16px;
+    width: auto;
+    padding: 0.5rem 1rem;
+  }
+  footer .logo {
+    gap: 0.5rem;
+  }
+  footer .logo img {
+    height: 2.5rem;
+  }
+  footer .logo h1 {
+    font-size: 18px;
+    text-wrap: nowrap;
+  }
+  footer .rodape-1 {
+    margin-left: 0rem;
+    padding-top: 2rem;
+  }
+  footer .rodape-2 {
+    margin-right: 0rem;
+    padding-bottom: 2rem;
+  }
+  footer hr {
+    height: 0.1rem;
+    width: 5rem;
+    background-color: white;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 1100px) {
+  footer {
+    gap: 1rem;
+  }
+  footer .rodape-1, footer .rodape-2 {
+    width: auto;
+    margin: 0rem;
+  }
+  footer .rodape-1 h4, footer .rodape-2 h4 {
+    padding: 1rem;
+    font-size: 18px;
+  }
+  footer .rodape-1 span, footer .rodape-2 span {
+    font-weight: 900;
+  }
+  footer .rodape-1 button, footer .rodape-2 button {
+    font-size: 17px;
+    padding: 0.5rem 1rem;
+    width: auto;
+    color: var(--azul-escuro);
+  }
+  footer .logo {
+    gap: 0.5rem;
+  }
+  footer .logo img {
+    height: 3rem;
+  }
+  footer .logo h1 {
+    font-family: var(--museo);
+    font-weight: 500;
+    font-size: 18px;
+    text-wrap: nowrap;
+  }
+  footer .rodape-1 {
+    margin-left: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  footer .rodape-2 {
+    margin-right: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  footer hr {
+    height: 10rem;
+  }
 }/*# sourceMappingURL=style.css.map */
