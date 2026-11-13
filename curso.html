@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index_sass/style.css">
+    <link rel="stylesheet" href="index_sass/reset.css">
+    <title>Acessar curso | Entenda o Algoritmo</title>
+</head>
+<body>
+    <header>
+        <a class="logo" href="index.html" aria-label="Entenda o Algoritmo - página inicial">
+            <img src="img/logo.png" alt="">
+            <h1 class="texto-logo">Entenda o Algoritmo</h1>
+        </a>
+        <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
+            <span></span><span></span><span></span>
+        </button>
+        <nav class="opcoes" id="menu" aria-label="Menu principal">
+            <a href="index.html">Início</a>
+            <a href="curso.html" aria-current="page">Acessar curso</a>
+            <a href="mais-informacoes.html">Mais informações</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="pagina-topo topo-curso">
+            <h2>Rota de <span>aprendizagem</span></h2>
+            <p>Um vídeo de introdução, 4 aulas curtinhas e um vídeo de encerramento. Assista na ordem para entender, passo a passo, como as redes sociais prendem a sua atenção.</p>
+        </section>
+
+        <section class="curso">
+            <div class="curso-player">
+                <div class="video">
+                    <iframe id="video-aula" src="https://www.youtube-nocookie.com/embed/M7lc1UVf-VE?rel=0" title="Introdução - Boas-vindas ao curso" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+                </div>
+                <p class="aula-etiqueta" id="aula-etiqueta">Introdução</p>
+                <h3 id="aula-titulo">Boas-vindas ao curso</h3>
+                <p id="aula-descricao">Conheça o curso, quem criou e o que você vai aprender em cada uma das quatro aulas.</p>
+                <div class="curso-navegacao">
+                    <button class="btn btn-secundario" type="button" id="aula-anterior">&larr; Vídeo anterior</button>
+                    <button class="btn" type="button" id="aula-proxima">Próximo vídeo &rarr;</button>
+                </div>
+            </div>
+
+            <aside class="curso-lista">
+                <h3>Vídeos do curso</h3>
+                <!--
+                    VÍDEOS DE TESTE: para colocar as suas videoaulas, troque o valor de data-video
+                    pelo ID do seu vídeo no YouTube (introdução, aulas 1 a 4 e encerramento).
+                    Exemplo: no link https://www.youtube.com/watch?v=ABC123xyz o ID é ABC123xyz
+                -->
+                <ol class="lista-aulas">
+                    <li>
+                        <button class="aula aula-extra" type="button" data-id="introducao" data-etiqueta="Introdução" data-video="M7lc1UVf-VE" data-titulo="Boas-vindas ao curso" data-descricao="Conheça o curso, quem criou e o que você vai aprender em cada uma das quatro aulas.">
+                            <span class="aula-numero" aria-hidden="true">&#9654;</span>
+                            <span class="aula-texto"><strong>Introdução</strong>Boas-vindas ao curso</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="aula" type="button" data-id="aula-1" data-etiqueta="Aula 1 de 4" data-video="M7lc1UVf-VE" data-titulo="Caixa de Skinner" data-descricao="Descubra o experimento de B. F. Skinner e por que recompensas aleatórias deixam a gente viciado, dos cassinos ao TikTok.">
+                            <span class="aula-numero">1</span>
+                            <span class="aula-texto"><strong>Aula 1</strong>Caixa de Skinner</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="aula" type="button" data-id="aula-2" data-etiqueta="Aula 2 de 4" data-video="aqz-KE-bpKQ" data-titulo="Algoritmos das redes sociais" data-descricao="Conheça a história do Facebook e do Instagram, o EdgeRank e como o filtro-bolha decide o que aparece no seu feed.">
+                            <span class="aula-numero">2</span>
+                            <span class="aula-texto"><strong>Aula 2</strong>Algoritmos das redes sociais</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="aula" type="button" data-id="aula-3" data-etiqueta="Aula 3 de 4" data-video="jNQXAC9IVRw" data-titulo="Lados positivos e negativos das redes sociais" data-descricao="Comunicação, educação e oportunidades de um lado; vício, comparação e fake news do outro.">
+                            <span class="aula-numero">3</span>
+                            <span class="aula-texto"><strong>Aula 3</strong>Lados positivos e negativos das redes sociais</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="aula" type="button" data-id="aula-4" data-etiqueta="Aula 4 de 4" data-video="eRsGyueVLvQ" data-titulo="Hobbies e saúde mental" data-descricao="Dopamina, hiperestimulação e por que hobbies e exercícios físicos fazem tão bem para a mente.">
+                            <span class="aula-numero">4</span>
+                            <span class="aula-texto"><strong>Aula 4</strong>Hobbies e saúde mental</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="aula aula-extra" type="button" data-id="encerramento" data-etiqueta="Encerramento" data-video="aqz-KE-bpKQ" data-titulo="Encerramento do curso" data-descricao="Relembre os principais pontos das quatro aulas e veja como usar as redes sociais com mais consciência no dia a dia.">
+                            <span class="aula-numero" aria-hidden="true">&#10003;</span>
+                            <span class="aula-texto"><strong>Encerramento</strong>Encerramento do curso</span>
+                        </button>
+                    </li>
+                </ol>
+            </aside>
+        </section>
+
+        <section class="container-feedback">
+            <h3>Terminou o curso? <span>Conta pra gente o que você achou!</span></h3>
+            <!-- Troque o # pelo link do seu formulário do Google Forms -->
+            <a class="btn" href="#" target="_blank" rel="noopener">Responder avaliação</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="rodape-1">
+            <div class="logo">
+                <img src="img/logo.png" alt="">
+                <h1 class="texto-logo">Entenda o Algoritmo</h1>
+            </div>
+
+            <h4>Curso desenvolvido <span>sem fins lucrativos</span>. Material de estudo feito como Atividade Extensionista da Faculdade de Engenharia de Software.</h4>
+            <h4>As imagens utilizadas neste site foram retiradas do Freepik (site de imagens gratuitas) e são de autoria de seus respectivos criadores. Informações sobre os artistas e referências bibliográficas (artigos e livros) disponíveis no menu de <span>Mais informações</span>.</h4>
+        </div>
+        <hr class="rodape-divisao">
+        <div class="rodape-2">
+            <h4>email@email.com</h4>
+            <a class="btn mais-info-btn" href="mais-informacoes.html">Mais informações</a>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

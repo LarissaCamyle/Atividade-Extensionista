@@ -1,4 +1,4 @@
-container{
+.container{
     width: 100%;
     height: 45rem;
     display: flex;
@@ -7,10 +7,11 @@ container{
     margin: 3rem 0rem 0rem 0rem;
     background-color: aqua;
     gap:5rem;
+    padding: 2rem 0rem;
 
     img{
         height: 35rem;
-        padding: 2rem 0rem;
+        
     }
 
     div{
@@ -39,7 +40,7 @@ container{
 .container-1{
     background: var(--roxo);
 
-    button{
+    button, .btn{
         color: var(--roxo);
     }
 }
@@ -49,7 +50,7 @@ container{
 }
 
 .container-3{
-    height: 40rem;
+    height: auto;
     background: var(--rosa);
 
     img{
@@ -62,12 +63,15 @@ container{
     background: var(--azul-claro);
     margin-bottom: 4rem;
 
-    button{
+    button, .btn{
         color: var(--azul-claro);
     }
 }
 
-button{
+button, .btn{
+    display: inline-block;
+    text-decoration: none;
+    cursor: pointer;
     padding: 1rem 2rem;
     background: white;
     font-family: var(--karla);
@@ -78,12 +82,17 @@ button{
     margin-top: 1rem;
 }
 
-button:hover{
+button:hover, .btn:hover{
     transform: scale(1.1);
 }
 
+button:focus-visible, .btn:focus-visible, a:focus-visible{
+    outline: 3px solid #FFD43B;
+    outline-offset: 3px;
+}
+
 @media screen and (max-width: 650px) {
-    container{
+    .container{
         flex-direction: column;
         justify-content: center;
         height: auto;
@@ -120,12 +129,22 @@ button:hover{
                 font-weight: 900;
             }
 
-            button{
+            button, .btn{
                 padding: 1rem 1.5rem;
                 font-size: 20px;
                 margin-top: 1rem;
                 width: 12rem;
             }
+        }
+    }
+
+    .container-1{
+        flex-direction: column-reverse;
+        gap: 0rem;
+        padding: 2rem 0rem;
+
+        img{
+            padding: 0rem;
         }
     }
 
@@ -157,14 +176,14 @@ button:hover{
             padding: 0rem;
         }
 
-        button{
+        button, .btn{
             margin-bottom: 2.5rem;
         }
     }
 }
 
 @media screen and (min-width: 500px) and (max-width: 650px) {
-    container{
+    .container{
         img{
             width: 75%;
         }
@@ -183,7 +202,74 @@ button:hover{
     }
 }
 
-@media screen and (min-width: 750px) and (max-width: 1000px) {
+@media screen and (min-width: 650px) and (max-width: 1000px) {
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        padding: 2rem 1.5rem;
 
+        img{
+            width: 45%!important;
+            height: auto;
+            padding: 1rem 0rem;
+        }
+
+        div{
+            gap: 1rem;
+            width: 40%!important;
+            text-align: center;
+            padding: 0rem;
+            margin: 0rem;
+            
+
+            h2{
+                font-size: 1.8rem;
+                
+            }
+
+            h3{
+                font-size: 1.4rem;
+            }
+
+            button, .btn{
+                padding: 1rem 1.5rem;
+                font-size: 20px;
+                margin-top: 1rem;
+                width: 12rem;
+            }
+        }
+    }
+    .container-3{
+        h3{
+            margin: 0rem;
+        }
+
+        img{
+            padding: 0rem;
+        }
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1300px) {
+    .container{
+        gap: 0rem;
+
+        img{
+            width: 50%!important;
+            height: auto;
+            padding: 2rem 0rem;
+        }
+    }
+    .container-3{
+        padding: 2rem 0rem;
+        img{
+            image-orientation: flip;
+            width: 50%;
+            height: auto;
+            padding: 0rem;
+        }
+    }
 }
 

@@ -1,69 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/sass/style.css">
-    <link rel="stylesheet" href="/sass/reset.css">
-    <title>Entendendo o Algoritmo</title>
+    <link rel="stylesheet" href="index_sass/style.css">
+    <link rel="stylesheet" href="index_sass/reset.css">
+    <title>Entenda o Algoritmo</title>
 </head>
 <body>
     <header>
-        <div class="logo">
-            <img src="img/logo.png" alt="imagem logo">
+        <a class="logo" href="index.html" aria-label="Entenda o Algoritmo - página inicial">
+            <img src="img/logo.png" alt="">
             <h1 class="texto-logo">Entenda o Algoritmo</h1>
-        </div>
-        <div class="opcoes">
-            <h2>Início</h2>
-            <h2>Acessar curso</h2>
-            <h2>Mais informações</h2>
-        </div>
+        </a>
+        <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
+            <span></span><span></span><span></span>
+        </button>
+        <nav class="opcoes" id="menu" aria-label="Menu principal">
+            <a href="index.html" aria-current="page">Início</a>
+            <a href="curso.html">Acessar curso</a>
+            <a href="mais-informacoes.html">Mais informações</a>
+        </nav>
     </header>
 
-    <container class="container-1">
-        <div class="container-1-texto">
-            <h2>Entenda o Algoritmo: <span>Por Que as Redes Sociais Viciam</span></h2>
-            <button class="container-1-btn">Acessar curso</button>
-        </div>
-        <img src="/img/img1.png" alt="" class="container-1-imagem">
-    </container>
+    <main>
+        <section class="container container-1">
+            <div class="container-1-texto">
+                <h2>Entenda o Algoritmo: <span>Por Que as Redes Sociais Viciam</span></h2>
+                <a class="btn container-1-btn" href="curso.html">Acessar curso</a>
+            </div>
+            <img src="img/img1.png" alt="Ilustração de uma cabeça metade circuito eletrônico e metade cérebro" class="container-1-imagem">
+        </section>
 
-    <container class="container-2">
-        <img src="/img/img2.png" alt="" class="container-2-imagem">
-        <div class="container-2-texto">
-            <h3>As redes sociais te controlam mais do que você imagina <span>descubra como os algoritmos entram na sua mente.</span></h3>
-        </div>
-    </container>
+        <section class="container container-2">
+            <img src="img/img2.png" alt="Ilustração de um cérebro conectado a gráficos, engrenagens e servidores" class="container-2-imagem">
+            <div class="container-2-texto">
+                <h3>As redes sociais te controlam mais do que você imagina <span>descubra como os algoritmos entram na sua mente.</span></h3>
+            </div>
+        </section>
 
-    <container class="container-3">
-        <div class="container-3-texto">
-            <h3>Totalmente gratuito e feito pra compartilhar: <span>chama os amigos e colegas e descubram juntos como as redes sociais viciam.</span></h3>
-        </div>
-        <img src="/img/img3.png" alt="" class="container-3-imagem">
-    </container>
+        <section class="container container-3">
+            <div class="container-3-texto">
+                <h3>Totalmente gratuito e feito pra compartilhar: <span>chama os amigos e colegas e descubram juntos como as redes sociais viciam.</span></h3>
+            </div>
+            <img src="img/img3.png" alt="Ilustração de estudantes chegando à escola com um ônibus escolar" class="container-3-imagem">
+        </section>
 
-    <container class="container-4">
-        <img src="/img/img4.png" alt="" class="container-4-imagem">
-        <div class="container-4-texto">
-            <h3>Clica no curso e fica por dentro do que <span>ninguém te contou sobre os algoritmos.</span></h3>
-            <button class="container-4-btn">Acessar curso</button>
-        </div>
-    </container>
+        <section class="container container-4">
+            <img src="img/img4.png" alt="Ilustração de duas pessoas segurando um escudo com um cadeado" class="container-4-imagem">
+            <div class="container-4-texto">
+                <h3>Clica no curso e fica por dentro do que <span>ninguém te contou sobre os algoritmos.</span></h3>
+                <a class="btn container-4-btn" href="curso.html">Acessar curso</a>
+            </div>
+        </section>
+    </main>
 
     <footer>
         <div class="rodape-1">
             <div class="logo">
-                <img src="/img/logo.png" alt="imagem logo">
+                <img src="img/logo.png" alt="">
                 <h1 class="texto-logo">Entenda o Algoritmo</h1>
             </div>
-            <h4>Curso desenvolvido <span>sem fins lucrativos</span>.Material de estudo feito como Atividade Extensionista da Faculdade de Engenharia de Software.</h4>
+
+            <h4>Curso desenvolvido <span>sem fins lucrativos</span>. Material de estudo feito como Atividade Extensionista da Faculdade de Engenharia de Software.</h4>
+            <h4>As imagens utilizadas neste site foram retiradas do Freepik (site de imagens gratuitas) e são de autoria de seus respectivos criadores. Informações sobre os artistas e referências bibliográficas (artigos e livros) disponíveis no menu de <span>Mais informações</span>.</h4>
         </div>
         <hr class="rodape-divisao">
         <div class="rodape-2">
             <h4>email@email.com</h4>
-            <button class="mais-info-btn">Mais informações</button>
+            <a class="btn mais-info-btn" href="mais-informacoes.html">Mais informações</a>
         </div>
     </footer>
 
+    <script src="js/script.js"></script>
 </body>
 </html>
